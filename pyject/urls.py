@@ -8,7 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'pyject.views.home', name='home'),
     # url(r'^pyject/', include('pyject.foo.urls')),
-    url(r'^users/login/$', 'users.views.login')
+    url(r'^users/', include('users.urls'))
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),

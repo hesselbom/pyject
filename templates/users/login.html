@@ -1,5 +1,7 @@
-<form method="post">
-	<label>Email: <input type="text" name="email" id="email" required></label>
+<form method="post" action="/users/validate/">
+    {% csrf_token %}
+    {{ error_message }}
+	<label>Username or email: <input type="text" name="email" id="email" required></label>
 	<label>Password: <input type="password" name="password" id="password" required></label>
 	<input type="submit" value="Log in">
 </form>
