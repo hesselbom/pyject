@@ -1,1 +1,13 @@
-Hello there {{ user_id }}!
+{% extends "base.html" %}
+{% block content %}
+<h1>Hello there {{ user_id }}!</h1>
+<p>
+    <h2>Change password</h2>
+    <form method="post" action="">
+        <label>Current password: <input type="password" name="password"></label>
+        <label>New password: <input type="password" name="new_password"></label>
+        <label>Password again: <input type="password" name="new_password_repeat"></label>
+        <input type="submit" value="Go">
+    </form>
+</p>
+{% endblock %}
