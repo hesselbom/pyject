@@ -12,7 +12,7 @@ label {
 }
 
 .grey-theme {
-	background: #ccc;
+	background: #eee;
 	color: #333;
 }
 
@@ -22,7 +22,7 @@ label {
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
-	border: 2px solid #c3c3c3;
+	border: 1px solid #c3c3c3;
 	font-size: 14px;
 }
 
