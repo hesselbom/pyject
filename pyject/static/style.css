@@ -3,6 +3,59 @@ body {
     font-family: helvetica;
 }
 
+h1, h2, h3, h4, h5 {
+	margin: 0 0 10px;
+}
+
 label {
     display: block;
+}
+
+.grey-theme {
+	background: #ccc;
+	color: #333;
+}
+
+.login-form {
+	width: 320px;
+	margin: 100px auto;
+	background: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	border: 2px solid #c3c3c3;
+	font-size: 14px;
+}
+
+.login-form input[type=text], .login-form input[type=password] {
+	width: 94%;
+	margin: 0 0 10px;
+}
+
+input[type=text], input[type=password] {
+	display: block;
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+}
+
+input[type=submit], input[type=button], button {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	background: #555;
+	border-radius: 5px;
+	padding: 5px;
+	border: none;
+	box-shadow: 2px 2px 1px #ccc;
+}
+
+.warning {
+	width: 94%;
+	margin: 10px 0;
+	border-radius: 2px;
+	background: #FFEFCC;
+	border: 1px solid #D63636;
+	padding: 2%;
+	display: block;
 }

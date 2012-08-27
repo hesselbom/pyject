@@ -6,7 +6,7 @@
         <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
     </head>
 
-    <body>
+    <body class="{% block body_classes %}main{% endblock %}">
         <div class="content">
             {% block content %}
             {% endblock %}
