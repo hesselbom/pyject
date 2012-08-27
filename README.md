@@ -1,4 +1,4 @@
 pyject
 ======
 
-Project Manager application written in Django/Python inspired by Scrum.
+Project management application written in Django/Python.
