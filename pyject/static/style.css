@@ -1,6 +1,21 @@
+/* Base */
 body {
     font-size: 13px;
     font-family: helvetica;
+    margin: 0;
+    overflow: hidden; 
+}
+
+header {
+	width: 100%;
+	background: #eee;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+
+header h1 {
+	margin: 0;
+	float: left;
 }
 
 h1, h2, h3, h4, h5 {
@@ -9,6 +24,30 @@ h1, h2, h3, h4, h5 {
 
 label {
     display: block;
+}
+
+/* Header */
+header .wrapper {
+	width: 720px;
+	margin: 0 auto;
+}
+
+header ul {
+	float: right;
+	padding: 0;
+	margin: 10px 0 0;
+}
+
+header ul li {
+	float: left;
+	list-style-type: none;
+	margin-left: 25px;
+}
+
+/* Content */
+.content {
+	width: 720px;
+	margin: 15px auto;
 }
 
 .grey-theme {
@@ -20,7 +59,6 @@ label {
 	width: 320px;
 	margin: 100px auto;
 	background: #fff;
-	border-radius: 5px;
 	padding: 20px;
 	border: 1px solid #c3c3c3;
 	font-size: 14px;
@@ -35,25 +73,28 @@ input[type=text], input[type=password] {
 	display: block;
 	font-size: 18px;
 	padding: 5px;
-	border-radius: 5px;
-	border: 2px solid #ccc;
+	border: 1px solid #ccc;
+	background: #f9f9f9;
 }
 
 input[type=submit], input[type=button], button {
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: bold;
-	color: #fff;
-	background: #555;
-	border-radius: 5px;
+	color: #555;
+	background: #fff;
 	padding: 5px;
 	border: none;
-	box-shadow: 2px 2px 1px #ccc;
+	border: 1px solid #ccc;
+	box-shadow: 1px 1px 0 #ccc;
 }
+
+/* All rounded */
+.rounded { border-radius: 3px; }
+input { border-radius: 3px; }
 
 .warning {
 	width: 94%;
 	margin: 10px 0;
-	border-radius: 2px;
 	background: #FFEFCC;
 	border: 1px solid #D63636;
 	padding: 2%;

@@ -7,6 +7,17 @@
     </head>
 
     <body class="{% block body_classes %}main{% endblock %}">
+        <header>
+            <div class="wrapper">
+                <h1>Pyject</h1>
+
+                <ul>
+                    <li>Projects</li>
+                    <li>Users</li>
+                </ul>
+                <div style="clear: both;"></div>
+            </div>
+        </header>
         <div class="content">
             {% block content %}
             {% endblock %}
