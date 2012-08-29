@@ -1,0 +1,16 @@
+body { margin:20px; font:12px monospace; }
+a { color:#a75480; text-decoration:underline; cursor:pointer; }
+a:hover { text-decoration:none; }
+h1, h2 { font-size:12px; }
+
+#tasklists { list-style:none; padding-left:0px; }
+
+#tasks { display:none; }
+
+.add-task-form { display:none; }
+.tasks { list-style:none; padding:10px 0 0 10px; }
+.tasks li { padding:2px 0; }
+.tasks .checkbox { margin-right:10px; }
+.tasks .completed { text-decoration:line-through; }
+
+.clear-tasks { display:none; }
