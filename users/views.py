@@ -19,7 +19,7 @@ def validate(request):
 
     if valid:
         request.session['user_id'] = valid
-        return HttpResponseRedirect(reverse('users.views.dash'))
+        return HttpResponseRedirect(reverse('projects.views.home'))
     else:
         return render_to_response('users/login.html', {
             'error_message': 'Wrong username or password.'

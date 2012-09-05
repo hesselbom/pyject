@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ project.name }}{% endblock %}
+{% block heading %}{{ project.name }}{% endblock %}
+
+
+{% block content %}
+<div class="list-wrapper">
+    <div class="list-box rounded">
+        <h3>My first list</h3>
+        <ul>
+            <li><input type="checkbox"> <span class="time-estimate">7h</span> A todo</li>
+        </ul>
+    </div>
+</div>
+<div class="log-box rounded">
+    <strong>14th of Sep:</strong> Hannes finished "A previous todo".
+</div>
+{% endblock %}

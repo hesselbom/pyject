@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>{% block title %}Pyject{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
     </head>
 
     <body class="{% block body_classes %}main{% endblock %}">
         <header>
             <div class="wrapper">
-                <h1>Pyject</h1>
+                <h1>{% block heading %}Pyject{% endblock %}</h1>
 
                 <ul>
                     <li>Projects</li>

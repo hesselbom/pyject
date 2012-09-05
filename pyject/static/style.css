@@ -2,13 +2,14 @@
 body {
     font-size: 13px;
     font-family: helvetica;
+    background: #eee;
     margin: 0;
     overflow: hidden; 
 }
 
 header {
 	width: 100%;
-	background: #eee;
+	background: #fff;
 	border-bottom: 1px solid #ccc;
 	padding: 15px 0;
 }
@@ -89,7 +90,7 @@ input[type=submit], input[type=button], button {
 }
 
 /* All rounded */
-.rounded { border-radius: 3px; }
+.rounded { border-radius: 3px; box-shadow: 0 2px 0 #ccc; }
 input { border-radius: 3px; }
 
 .warning {
@@ -99,4 +100,74 @@ input { border-radius: 3px; }
 	border: 1px solid #D63636;
 	padding: 2%;
 	display: block;
+}
+
+/* Project card */
+.project-card {
+	width: 230px;
+	height: 100px;
+	background: #fff;
+	margin: 10px 10px 0 0;
+	border: 1px solid #fff;
+	float: left;
+	cursor: pointer;
+}
+
+.project-card:nth-child(3n+3) {
+	margin: 10px 0 0 0;
+}
+
+.project-card .bottom-half {
+	background: #eee;
+	height: 34px;
+	margin-top: 65px;
+	border-top: 1px solid #ccc;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.project-card .bottom-half h2 {
+	margin: -15px 0 0 10px;
+	text-shadow: 0 0 5px #fff;
+}
+
+/* Todo lists */
+
+.list-wrapper {
+	width: 480px;
+	float: left;
+	margin-right: 10px;
+}
+
+.list-box {
+	width: 460px;
+	background: #fff;
+	padding: 10px;
+}
+
+.list-box ul {
+	padding: 0;
+	margin: 0;
+}
+
+.list-box ul li {
+	list-style-type: none;
+}
+
+.list-box .time-estimate {
+	color: #fff;
+	font-weight: bold;
+	font-size: 9px;
+	border-radius: 10px;
+	padding: 4px;
+	background: orange;
+	margin-right: 5px;
+}
+
+.log-box {
+	float: left;
+	width: 220px;
+	padding: 5px;
+	background: #fff;
+	color: #ccc;
 }

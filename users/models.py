@@ -1,4 +1,5 @@
 from django.db import models
+import hashlib
 
 
 class User(models.Model):
@@ -12,10 +13,18 @@ class User(models.Model):
         return self.username
 
 
-class Auth(models.Model):
+class Auth():
     def initiate(self, username, password):
-        username_auth = User.objects.filter(username__exact=username, password__exact=password)
-        email_auth = User.objects.filter(email__exact=username, password__exact=password)
+        h = hashlib.sha512()
+        h.update('45etrgfd')
+        h.update(password)
+        h.update('ag8e4s@')
+
+        password_hash = h.hexdigest()
+        print password_hash
+
+        username_auth = User.objects.filter(username__exact=username, password__exact=password_hash)
+        email_auth = User.objects.filter(email__exact=username, password__exact=password_hash)
 
         if username_auth:
             user_id = username_auth[0].id

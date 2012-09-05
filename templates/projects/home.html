@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for p in projects %}
+    <div class="project-card rounded" onclick="location.href='/projects/{{ p.project_id }}'">
+        <div class="bottom-half">
+            <h2>{{ p.project.name }}</h2>
+        </div>
+    </div>
+{% endfor %}
+{% endblock %}
