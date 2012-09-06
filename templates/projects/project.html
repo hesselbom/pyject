@@ -8,8 +8,21 @@
 <div class="list-wrapper">
     <div class="list-box rounded">
         <h3>My first list</h3>
+        <form>
+            <div class="add-task rounded">
+                <input type="text" name="task" id="task" class="task-input">
+                <input type="text" name="time" id="time" class="tiny-input align-right">h
+            </div>
+            <input type="submit" value="Add">
+            <div style="clear: both;"></div>
+        </form>
         <ul>
-            <li><input type="checkbox"> <span class="time-estimate">7h</span> A todo</li>
+            <li>
+                <label><input type="checkbox"> A todo</label>
+            </li>
+            <li>
+                <label><input type="checkbox"> <div>Another todo that's a bit longer, actually so long that it will induce a linebreak!</div></label>
+            </li>
         </ul>
     </div>
 </div>

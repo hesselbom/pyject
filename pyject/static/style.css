@@ -84,9 +84,9 @@ input[type=submit], input[type=button], button {
 	color: #555;
 	background: #fff;
 	padding: 5px;
-	border: none;
 	border: 1px solid #ccc;
-	box-shadow: 1px 1px 0 #ccc;
+	box-shadow: 0 2px 0 #ccc;
+	margin-top: 1px;
 }
 
 /* All rounded */
@@ -152,6 +152,17 @@ input { border-radius: 3px; }
 
 .list-box ul li {
 	list-style-type: none;
+	margin: 3px 0;
+}
+
+.list-box label div {
+	max-width: 435px;
+	display: inline-block;
+}
+
+.list-box input[type=checkbox] {
+	vertical-align: top;
+	margin: 3px 5px 0 0;
 }
 
 .list-box .time-estimate {
@@ -161,7 +172,8 @@ input { border-radius: 3px; }
 	border-radius: 10px;
 	padding: 4px;
 	background: orange;
-	margin-right: 5px;
+	margin: -3px 5px 0 0;
+	float: left;
 }
 
 .log-box {
@@ -170,4 +182,38 @@ input { border-radius: 3px; }
 	padding: 5px;
 	background: #fff;
 	color: #ccc;
+}
+
+.add-task {
+	border: 1px solid #ccc;
+	width: 415px;
+	color: #555;
+	padding: 0;
+	float: left;
+	margin: 0 5px 10px 0;
+}
+
+.add-task input {
+	border: none;
+	padding: 5px 5px;
+	background: none;
+	display: inline;
+	font-size: 10pt;
+	color: #555;
+	outline: none;
+}
+
+.task-input {
+	width: 80%;
+	border-right: 1px solid #eee !important;
+	border-radius: 0 0 0;
+}
+
+.tiny-input {
+	width: 35px;
+	padding-right: 0;
+}
+
+.align-right {
+	text-align: right;
 }
