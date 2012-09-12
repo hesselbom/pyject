@@ -1,0 +1,31 @@
+header {
+    width: 100%;
+    padding: 15px 0;
+}
+
+header .wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.l-main {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1px 0;
+    border-top: 1px solid #ccc;
+}
+
+.l-column-two-thirds, .l-column-one-third {
+    margin-top: 10px;
+}
+
+.l-column-two-thirds {
+    float: left;
+    width: 635px;
+    margin-right: 10px;
+}
+
+.l-column-one-third {
+    float: left;
+    width: 315px;
+}

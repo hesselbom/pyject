@@ -3,15 +3,19 @@
 <html>
     <head>
         <title>{% block title %}Pyject{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/layout.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/module.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/state.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/theme.css" %}">
         <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
         <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
     </head>
 
     <body class="main grey-theme">
-        <div class="content">
-            <div class="login-form rounded">
+        <div class="l-main">
+            <div class="m-login-form">
                 <form method="post" action="/users/validate/">
                     {% csrf_token %}
                     <h1>Authentication</h1>

@@ -5,28 +5,30 @@
 
 
 {% block content %}
-<div class="list-wrapper">
-    <div class="list-box rounded border">
+<div class="l-column-two-thirds">
+    <div class="m-wrapper">
         <h3>My first list</h3>
         <form>
-            <div class="add-task rounded">
+            <div class="m-add-task">
                 <input type="text" name="task" id="task" class="task-input">
                 <input type="text" name="time" id="time" class="tiny-input align-right">h
             </div>
             <input type="submit" value="Add">
             <div style="clear: both;"></div>
         </form>
-        <ul>
+        <ul class="m-todo-list">
             <li>
-                <label><input type="checkbox"> A todo</label>
+                <label><input type="checkbox"><div>A todo</div></label>
             </li>
             <li>
-                <label><input type="checkbox"> <div>Another todo that's a bit longer, actually so long that it will induce a linebreak! But to do this, we have to keep on writing, forever and ever! Okey, not really.</div></label>
+                <label><input type="checkbox"><div>Another todo that's a bit longer, actually so long that it will induce a linebreak! But to do this, we have to keep on writing, forever and ever! Okey, not really.</div></label>
             </li>
         </ul>
     </div>
 </div>
-<div class="log-box rounded border">
-    <strong>14th of Sep:</strong> Hannes finished "A previous todo".
+<div class="l-column-one-third">
+    <div class="m-wrapper">
+        <strong>14th of Sep:</strong> Hannes finished "A previous todo".
+    </div>
 </div>
 {% endblock %}

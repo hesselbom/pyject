@@ -1,0 +1,9 @@
+.m-menu a:hover {
+    background: #eee;
+    border-radius: 5px;
+
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
+}

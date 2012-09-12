@@ -1,0 +1,48 @@
+/* Base */
+
+body, html {
+    font-size: 13px;
+    font-family: helvetica;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 3px;
+}
+
+input[type=text], input[type=password] {
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    outline: none;
+    height: 20px;
+}
+
+input[type=submit], input[type=button], button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 2px 0 #ccc;
+    height: 32px;
+}
+
+/* In lack of a better place to put it atm */
+.clearfix {
+    clear: both;
+}

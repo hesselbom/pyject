@@ -3,8 +3,12 @@
 <html>
     <head>
         <title>{% block title %}Pyject{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/layout.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/module.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/state.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/theme.css" %}">
         <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
         <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
     </head>
@@ -14,17 +18,17 @@
             <div class="wrapper">
                 <h1>{% block heading %}Pyject{% endblock %}</h1>
 
-                <div class="notification-alert rounded">12</div>
-                <ul class="menu">
+                <div class="m-notification-alert">12</div>
+                <ul class="m-menu">
                     <li><a href="{% url projects.views.home %}">Projects</a></li>
                     <li><a href="#">Users</a></li>
                     <li><a href="#">Settings</a></li>
                     <li><a href="{% url users.views.logout %}">Log out</a></li>
                 </ul>   
-                <div style="clear: both;"></div>
+                <div class="clearfix"></div>
             </div>
         </header>
-        <div class="content">
+        <div class="l-main">
             {% block content %}
             {% endblock %}
         </div>
