@@ -10,6 +10,12 @@ def login(request):
         context_instance=RequestContext(request))
 
 
+def logout(request):
+    request.session['user_id'] = False
+
+    return HttpResponseRedirect(reverse('users.views.login'))
+
+
 def validate(request):
     username = request.POST['email']
     password = request.POST['password']

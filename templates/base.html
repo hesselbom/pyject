@@ -3,8 +3,10 @@
 <html>
     <head>
         <title>{% block title %}Pyject{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
-        <link rel="stylesheet" type="text/css" href="{% static "normalize.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
     </head>
 
     <body class="{% block body_classes %}main{% endblock %}">
@@ -13,10 +15,11 @@
                 <h1>{% block heading %}Pyject{% endblock %}</h1>
 
                 <div class="notification-alert rounded">12</div>
-                <ul>
-                    <li>Projects</li>
-                    <li>Users</li>
-                    <li>Settings</li>
+                <ul class="menu">
+                    <li><a href="{% url projects.views.home %}">Projects</a></li>
+                    <li><a href="#">Users</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="{% url users.views.logout %}">Log out</a></li>
                 </ul>   
                 <div style="clear: both;"></div>
             </div>
