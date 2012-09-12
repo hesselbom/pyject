@@ -2,8 +2,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Authenticate</title>
-        <link rel="stylesheet" type="text/css" href="{% static "style.css" %}">
+        <title>{% block title %}Pyject{% endblock %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
+        <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
+        <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
     </head>
 
     <body class="main grey-theme">
