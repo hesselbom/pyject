@@ -1,14 +1,17 @@
 {% load staticfiles %}
+{% load compress %}
 <!DOCTYPE html>
 <html>
     <head>
         <title>{% block title %}Pyject{% endblock %}</title>
+        {% compress css %}
         <link rel="stylesheet" type="text/css" href="{% static "css/normalize.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/layout.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/module.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/state.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/theme.css" %}">
+        {% endcompress %}
         <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
         <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
     </head>

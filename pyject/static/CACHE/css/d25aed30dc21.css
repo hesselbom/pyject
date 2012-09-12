@@ -373,3 +373,246 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+/* Base */
+
+body, html {
+    font-size: 13px;
+    font-family: helvetica;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 10px;
+}
+
+label {
+    display: block;
+}
+
+input {
+    border-radius: 3px;
+}
+
+input[type=text], input[type=password] {
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    outline: none;
+    height: 20px;
+}
+
+input[type=submit], input[type=button], button {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0 2px 0 #ccc;
+    height: 32px;
+}
+
+/* In lack of a better place to put it atm */
+.clearfix {
+    clear: both;
+}
+header {
+    width: 100%;
+    padding: 15px 0;
+}
+
+header .wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.l-main {
+    width: 960px;
+    margin: 0 auto;
+    padding: 1px 0;
+    border-top: 1px solid #ccc;
+}
+
+.l-column-two-thirds, .l-column-one-third {
+    margin-top: 10px;
+}
+
+.l-column-two-thirds {
+    float: left;
+    width: 635px;
+    margin-right: 10px;
+}
+
+.l-column-one-third {
+    float: left;
+    width: 315px;
+}
+/* General */
+/* # Border, rounded corners and hard shadow */
+.m-project-card, .m-notification-alert, .m-wrapper,
+.m-add-task, .m-login-form {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #ccc;
+}
+
+/* # Cursor pointer */
+.m-project-card, .m-notification-alert {
+    cursor: pointer;
+}
+
+/* # List-style-type none */
+.m-menu li, .m-todo-list {
+    list-style-type: none;
+}
+
+/* # Standard padding */
+/* # # 10 px */
+.m-wrapper, .m-login-form {
+    padding: 10px;
+}
+
+/* # # 0 px */
+.m-todo-list {
+    padding: 0px;
+}
+
+/* General end */
+
+/* Project card */
+
+.m-project-card {
+    width: 226px;
+    height: 100px;
+    background: #fff;
+    margin: 15px 15px 2px 0;
+    float: left;
+}
+
+.m-project-card:nth-child(4n+4) {
+    margin: 15px 0 2px 0;
+}
+
+.m-project-card .bottom-half {
+    background: #eee;
+    background: rgba(0, 0, 0, .1);
+    height: 34px;
+    margin-top: 65px;
+    border-top: 1px solid #ccc;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.m-project-card .bottom-half h2 {
+    margin: -15px 0 0 10px;
+    text-shadow: 1px 1px 3px #fff, -1px -1px 3px #fff;
+}
+
+/* Menu */
+
+.m-menu {
+    float: right;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.m-menu li {
+    float: left;
+    margin-left: 5px;
+}
+
+.m-menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+}
+
+/* Notification alert */
+
+.m-notification-alert {
+    float: right;
+    background: #e6413f;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 0 0 15px;
+    border: none;
+}
+
+/* Todo lists */
+
+.m-add-task {
+    float: left;
+    margin-right: 10px;
+    padding: 0 10px 0 0;
+}
+
+.m-add-task input {
+    background: #fff;
+    border: none;
+    display: inline;
+    outline: none;
+}
+
+.m-add-task input:first-child {
+    width: 470px;
+}
+
+.m-add-task input:last-child {
+    width: 50px;
+    border-left: 1px solid #eee;
+}
+
+.m-todo-list li {
+    margin: 3px 0;
+}
+
+.m-todo-list input[type=checkbox] {
+    vertical-align: top;
+}
+
+.m-todo-list label div {
+    display: inline-block;
+    max-width: 575px;
+    margin-left: 10px;
+}
+
+/* Login */
+.m-login-form {
+    width: 280px;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 12pt;
+    margin-top: 100px;
+}
+
+.m-login-form input {
+    margin: 1px 0;
+}
+.m-menu a:hover {
+    background: #eee;
+    border-radius: 5px;
+
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
+}
+header h1 {
+    float: left;
+    margin: 0;
+}
+
+.grey-theme {
+    background: #eee;
+}
+
+.grey-theme .l-main {
+    border-top: none;
+}
