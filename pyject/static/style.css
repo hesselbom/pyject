@@ -109,7 +109,6 @@ input { border-radius: 3px; }
 	height: 100px;
 	background: #fff;
 	margin: 10px 10px 0 0;
-	border: 1px solid #fff;
 	float: left;
 	cursor: pointer;
 }
