@@ -154,13 +154,13 @@ input { border-radius: 3px; }
 /* Todo lists */
 
 .list-wrapper {
-	width: 638px;
+	width: 640px;
 	float: left;
-	margin-right: 10px;
+	margin: 5px 7px 0 0;
 }
 
 .list-box {
-	width: 618px;
+	width: 620px;
 	background: #fff;
 	padding: 10px;
 }
@@ -176,7 +176,7 @@ input { border-radius: 3px; }
 }
 
 .list-box label div {
-	max-width: 435px;
+	max-width: 590px;
 	display: inline-block;
 }
 
@@ -202,6 +202,7 @@ input { border-radius: 3px; }
 	padding: 10px;
 	background: #fff;
 	color: #ccc;
+	margin: 5px 0;
 }
 
 .add-task {
