@@ -2,7 +2,7 @@
 
 {% block content %}
 {% for p in projects %}
-    <div class="m-project-card" onclick="location.href='{% url projects.views.home %}{{ p.project_id }}'">
+    <div class="m-project-card" onclick="location.href='{% url 'projects.views.home' %}{{ p.project_id }}'">
         <div class="bottom-half">
             <h2>{{ p.project.name }}</h2>
         </div>
