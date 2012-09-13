@@ -2,3 +2,4 @@
 *.DS_Store
 pyject/static/js/addtask.js
 pyject/static/CACHE/*
+pyject/settings.py
