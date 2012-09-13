@@ -7,3 +7,12 @@
     -o-transition: background .5s;
     transition: background .5s;
 }
+
+.task-completed label div {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.every-other-bg {
+    background: #eee;
+}

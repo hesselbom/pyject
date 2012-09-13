@@ -4,6 +4,7 @@ $ ->
 	html =
 		addTask: (t, list) ->
 			list.append (@getTaskHtml t)
+			Dajaxice.todos.save_todo()
 
 		getTaskHtml: (t) ->
 			checkbox = ($ '<input type="checkbox">')
@@ -15,10 +16,10 @@ $ ->
 			checkbox.click ->
 				if checkbox.is ':checked'
 					t.completed = true
-					listitem.addClass 'completed'
+					listitem.addClass 'task-completed'
 				else
 					t.completed = false
-					listitem.removeClass 'completed'
+					listitem.removeClass 'task-completed'
 			listitem
 
 	window.addtask =

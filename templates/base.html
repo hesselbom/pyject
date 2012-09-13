@@ -1,5 +1,8 @@
 {% load staticfiles %}
 {% load compress %}
+{% load dajaxice_templatetags %}
+{% load url from future %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,9 +15,12 @@
         <link rel="stylesheet" type="text/css" href="{% static "css/state.css" %}">
         <link rel="stylesheet" type="text/css" href="{% static "css/theme.css" %}">
         {% endcompress %}
+        {% dajaxice_js_import %}
+        {% compress js %}
         <script type="text/javascript" src="{% static "js/jquery1.8.1-min.js" %}"></script>
         <script type="text/javascript" src="{% static "js/selectivizr-min.js" %}"></script>
         <script type="text/javascript" src="{% static "js/addtask.js" %}"></script>
+        {% endcompress %}
     </head>
 
     <body class="{% block body_classes %}main{% endblock %}">
